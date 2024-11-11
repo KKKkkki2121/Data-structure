@@ -22,7 +22,7 @@ LinkNode* initialLink(int data[],int len)
     return head;
 }
 
-LinkNode* reseverLink(LinkNode* head)
+LinkNode* reverseLink(LinkNode* head)
 {
     if (head==nullptr || head->next==nullptr)
         return head;
@@ -56,7 +56,7 @@ int main()
     int data[]={1,3,4,5,7,9,11,15,98};
     LinkNode* head=initialLink(data,sizeof(data)/sizeof(int));
     outputLink(head);
-    head=reseverLink(head);
+    head=reverseLink(head);
     outputLink(head);
     return 0;
 }
